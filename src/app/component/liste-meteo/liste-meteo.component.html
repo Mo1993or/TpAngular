@@ -1,0 +1,8 @@
+<h2>
+  liste meteo
+</h2>
+<ul>
+  <h3><li *ngFor="let mat of meteos">
+      <a [routerLink]="['/meteo',mat.name]">{{mat.name}}   {{mat.temp}}</a>
+  </li></h3>
+</ul>

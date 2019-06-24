@@ -1,0 +1,30 @@
+
+<div class="loginBox">
+    <h2>Titre</h2>
+    <input #box (keyup.enter)="changertitre(box.value)">
+    <button  (click)="changertitre(box.value)" block>changer</button>
+    <p>Titre: {{titre}}</p><br/><br/>
+
+  <h2>Connectez-vous ici</h2>
+  
+  
+  <p style="color: red">{{Er}}</p>
+
+<p>Login</p>
+
+<input type="text"  #login (keyup.enter)="login.value" placeholder="Votre Email" data-toggle="tooltip" data-placement="left"
+       title="Saisissez votre adresse Email ici">
+
+    
+
+<p>Mot de passe</p>
+<input type="password"  #password (keyup.enter)="password.value" placeholder="Votre mot de passe" data-toggle="tooltip" data-placement="right"
+       title="Saisissez votre mot de passe ici"><br/>
+
+     <button  (click)="getFormulaires(login.value,password.value)" block>connecter</button>
+
+     
+      
+   
+  
+</div>
